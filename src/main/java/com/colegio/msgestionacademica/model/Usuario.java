@@ -13,6 +13,7 @@ import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 @Data
 @Table(name = "usuarios")
@@ -51,4 +52,8 @@ public class Usuario {
     @Pattern(regexp = "^(ADMIN|COORDINADOR|DOCENTE)$", message = "El rol debe ser ADMIN, COORDINADOR o DOCENTE")
     @Column(nullable = false, length = 20)
     private String rol;
+
+    @JsonProperty("asignatura_id")
+    @Column(name = "asignatura_id")
+    private Long asignaturaId;
 }

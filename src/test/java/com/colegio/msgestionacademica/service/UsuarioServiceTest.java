@@ -59,7 +59,8 @@ class UsuarioServiceTest {
                 "Eduardo",
                 "Valenzuela",
                 "eduardoAULAbo@gmail.cl",
-                "DOCENTE"
+                "DOCENTE",
+                null
         );
     }
 }

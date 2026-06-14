@@ -68,7 +68,8 @@ class CargaAcademicaServiceTest {
                 "Eduardo",
                 "Valenzuela",
                 "eduardoAULAbo@gmail.cl",
-                "DOCENTE"
+                "DOCENTE",
+                null
         );
 
         Asignatura asignatura = new Asignatura(

@@ -51,6 +51,9 @@ public class UsuarioService {
             if (usuario.getRol() != null) {
                 existingUsuario.setRol(usuario.getRol());
             }
+            if (usuario.getAsignaturaId() != null) {
+                existingUsuario.setAsignaturaId(usuario.getAsignaturaId());
+            }
             return usuarioRepository.save(existingUsuario);
         }
         return null;
