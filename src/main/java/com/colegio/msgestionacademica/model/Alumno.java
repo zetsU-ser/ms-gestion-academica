@@ -40,6 +40,12 @@ public class Alumno {
     @Column(nullable = false, length = 50)
     private String apellido;
 
+    @jakarta.validation.constraints.NotNull(message = "La edad es obligatoria")
+    @jakarta.validation.constraints.Min(value = 4, message = "La edad mínima es 4 años")
+    @jakarta.validation.constraints.Max(value = 100, message = "La edad máxima es 100 años")
+    @Column(name = "edad")
+    private Integer edad;
+
     @NotBlank(message = "El nombre del apoderado es obligatorio")
     @Size(max = 100, message = "El nombre del apoderado no puede superar los 100 caracteres")
     @Column(nullable = false, length = 100)

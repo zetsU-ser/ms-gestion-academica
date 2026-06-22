@@ -62,6 +62,7 @@ class NotaServiceTest {
                 "12367678-9",
                 "Brad",
                 "Sexo",
+                15,
                 "Don Sexo",
                 "donSexo@correo.cl",
                 "916745678"

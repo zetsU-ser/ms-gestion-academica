@@ -62,6 +62,7 @@ class AlumnoServiceTest {
                 "12367678-9",
                 "Brad",
                 "Sexo",
+                15,
                 "Don Sexo",
                 "donSexo@gmail.com",
                 "916745678"
