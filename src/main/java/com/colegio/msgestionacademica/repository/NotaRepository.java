@@ -7,4 +7,5 @@ import com.colegio.msgestionacademica.model.Nota;
 
 @Repository
 public interface NotaRepository extends JpaRepository<Nota, Long> {
+    Nota findByAlumnoIdAndEvaluacionId(Long alumnoId, Long evaluacionId);
 }
